@@ -1,6 +1,10 @@
-FROM node:7.10.0-alpine
+FROM node:7.10.1-alpine
 
-COPY src/dist/ /opt
+WORKDIR /opt
+
+COPY src/dist/ /opt/dist
 COPY src/server.js /opt
 
-ENTRYPOINT [ "node /opt/server.js"]
+RUN npm install express
+
+CMD [ "node","server.js"]
