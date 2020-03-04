@@ -1,6 +1,8 @@
 # algamoney-ui-server
 
 * Fazer o build do código ui
+ * acessar diretorio do front
+ * npm install
  * ng build --environment=docker
 * Copiar o conteudo do dist para o diretorio src/dist
 * Copiar o arquivo server.js para o diretorio src
